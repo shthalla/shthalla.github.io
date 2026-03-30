@@ -3,50 +3,255 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shravan Kumar Thalla | DevOps Portfolio</title>
+  <title>Shravan Kumar Thalla | DevOps Engineer</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
-  <section class="hero">
-    <h1>Shravan Kumar Thalla</h1>
-    <p class="tagline">Crafting Reliable, Scalable Infrastructure</p>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <span class="nav-logo">SKT</span>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="assets/shravan%20Resume.pdf" download class="nav-resume">Resume</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1>Shravan Kumar Thalla</h1>
+      <p class="tagline">DevOps Engineer &nbsp;·&nbsp; Cloud Architect &nbsp;·&nbsp; Infrastructure Automation</p>
+      <p class="hero-sub">Building resilient pipelines and scalable cloud systems that teams rely on.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-dots" aria-hidden="true"></div>
   </section>
 
-  <section class="skills">
-    <h2>🚀 DevOps Toolset</h2>
-  <div class="logo-grid">
-    <div class="logo-item" onclick="highlightTool(`• Designed secure, scalable environments using EC2, VPC, and IAM.<br>• Built serverless workflows using Lambda, Step Functions, and S3.<br>• Managed multi-account governance via Control Tower and SCPs.<br>• Automated infrastructure with CloudFormation and Terraform.<br>• Enabled monitoring and alerts using CloudWatch and X-Ray.`)">
-      <img src="assets/aws.png" alt="AWS" />
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <h2 class="section-title"><span>01.</span> About Me</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I'm a DevOps engineer passionate about bridging the gap between development and operations.
+          With hands-on experience across AWS, Kubernetes, and CI/CD automation, I design infrastructure
+          that is secure, observable, and built to scale.
+        </p>
+        <p>
+          I enjoy automating everything — from multi-cloud provisioning with Terraform to deployment
+          pipelines with Jenkins and GitHub Actions. When I'm not building pipelines, I'm optimizing
+          monitoring stacks or containerizing legacy workloads.
+        </p>
+        <ul class="about-highlights">
+          <li>☁️ AWS Certified Solutions Architect</li>
+          <li>🐳 Kubernetes production clusters (EKS / AKS)</li>
+          <li>⚙️ Infrastructure as Code with Terraform</li>
+          <li>📊 Observability with CloudWatch, Prometheus, Grafana</li>
+        </ul>
+      </div>
+      <div class="about-card">
+        <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years of Experience</span></div>
+        <div class="stat"><span class="stat-num">15+</span><span class="stat-label">Production Deployments</span></div>
+        <div class="stat"><span class="stat-num">8+</span><span class="stat-label">Core Tools Mastered</span></div>
+        <div class="stat"><span class="stat-num">100+</span><span class="stat-label">Linux Hosts Managed</span></div>
+      </div>
     </div>
-    <div class="logo-item" onclick="highlightTool(`• Containerized microservices for consistent deployment.<br>• Built multi-stage Dockerfiles for lean images.<br>• Used Docker Compose for local orchestration.<br>• Integrated Docker into Jenkins pipelines.<br>• Migrated apps to ECS/EKS clusters.`)">
-      <img src="assets/docker.png" alt="Docker" />
-    </div>
-    <div class="logo-item" onclick="highlightTool(`• Managed GitFlow and branching via GitHub.<br>• Set up GitHub Actions for CI/CD triggers.<br>• Used Webhooks for build integration.<br>• Handled secrets in GitHub Actions.<br>• Collaborated via PR reviews & checks.`)">
-      <img src="assets/github.png" alt="GitHub" />
-    </div>
-    <div class="logo-item" onclick="highlightTool(`• Built pipelines in Groovy for CI/CD.<br>• Linked Jenkins to GitHub + Terraform.<br>• Parallel builds for faster delivery.<br>• Jenkins on K8s for dynamic agents.<br>• Slack/email alerts from Jenkins.`)">
-      <img src="assets/jenkins.png" alt="Jenkins" />
-    </div>
-    <div class="logo-item" onclick="highlightTool(`• Used EKS/AKS for K8s production workloads.<br>• Deployed Helm charts for services.<br>• Configured HPA and health probes.<br>• Secured clusters using RBAC/NetworkPolicy.<br>• Monitored using kubectl and k9s.`)">
-      <img src="assets/kubernetes.png" alt="Kubernetes" />
-    </div>
-    <div class="logo-item" onclick="highlightTool(`• Wrote Bash scripts for automation.<br>• Tuned kernel settings for Docker/K8s.<br>• Managed firewall & iptables.<br>• Used systemd and journalctl.<br>• Deployed across 100+ Linux hosts.`)">
-      <img src="assets/linux.png" alt="Linux" />
-    </div>
-    <div class="logo-item" onclick="highlightTool(`• Built Lambda/ETL jobs in Python.<br>• Created CLI automation tools.<br>• Used Boto3 for AWS API scripting.<br>• Integrated APIs/webhooks via Python.<br>• Parsed logs & built dashboards.`)">
-      <img src="assets/python.png" alt="Python" />
-    </div>
-    <div class="logo-item" onclick="highlightTool(`• Wrote IaC for AWS, Azure, GCP.<br>• Used Terraform in CI/CD pipelines.<br>• Managed remote state with S3+DynamoDB.<br>• Created modules for reuse & DRY code.<br>• Ran plan/apply with drift detection.`)">
-      <img src="assets/terraform.png" alt="Terraform" />
-    </div>
-  </div>
-    <p id="tool-info" class="tool-info"></p>
   </section>
 
-  <!-- ✅ Add this just before </body> -->
-  <footer class="resume-footer">
-    <a href="resume.pdf" download class="resume-button">📄 Download Full Resume (PDF)</a>
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <h2 class="section-title"><span>02.</span> DevOps Toolset</h2>
+    <p class="section-sub">Click a tool to see how I've used it.</p>
+    <div class="logo-grid">
+      <div class="logo-item" data-tool="AWS" onclick="highlightTool('AWS', '• Designed secure, scalable environments using EC2, VPC, and IAM.\n• Built serverless workflows using Lambda, Step Functions, and S3.\n• Managed multi-account governance via Control Tower and SCPs.\n• Automated infrastructure with CloudFormation and Terraform.\n• Enabled monitoring and alerts using CloudWatch and X-Ray.')">
+        <img src="assets/aws.png" alt="AWS" />
+        <span>AWS</span>
+      </div>
+      <div class="logo-item" data-tool="Docker" onclick="highlightTool('Docker', '• Containerized microservices for consistent deployment.\n• Built multi-stage Dockerfiles for lean images.\n• Used Docker Compose for local orchestration.\n• Integrated Docker into Jenkins pipelines.\n• Migrated apps to ECS/EKS clusters.')">
+        <img src="assets/docker.png" alt="Docker" />
+        <span>Docker</span>
+      </div>
+      <div class="logo-item" data-tool="GitHub" onclick="highlightTool('GitHub', '• Managed GitFlow and branching via GitHub.\n• Set up GitHub Actions for CI/CD triggers.\n• Used Webhooks for build integration.\n• Handled secrets in GitHub Actions.\n• Collaborated via PR reviews & checks.')">
+        <img src="assets/github.png" alt="GitHub" />
+        <span>GitHub</span>
+      </div>
+      <div class="logo-item" data-tool="Jenkins" onclick="highlightTool('Jenkins', '• Built pipelines in Groovy for CI/CD.\n• Linked Jenkins to GitHub + Terraform.\n• Parallel builds for faster delivery.\n• Jenkins on K8s for dynamic agents.\n• Slack/email alerts from Jenkins.')">
+        <img src="assets/jenkins.png" alt="Jenkins" />
+        <span>Jenkins</span>
+      </div>
+      <div class="logo-item" data-tool="Kubernetes" onclick="highlightTool('Kubernetes', '• Used EKS/AKS for K8s production workloads.\n• Deployed Helm charts for services.\n• Configured HPA and health probes.\n• Secured clusters using RBAC/NetworkPolicy.\n• Monitored using kubectl and k9s.')">
+        <img src="assets/kubernetes.png" alt="Kubernetes" />
+        <span>Kubernetes</span>
+      </div>
+      <div class="logo-item" data-tool="Linux" onclick="highlightTool('Linux', '• Wrote Bash scripts for automation.\n• Tuned kernel settings for Docker/K8s.\n• Managed firewall & iptables.\n• Used systemd and journalctl.\n• Deployed across 100+ Linux hosts.')">
+        <img src="assets/linux.png" alt="Linux" />
+        <span>Linux</span>
+      </div>
+      <div class="logo-item" data-tool="Python" onclick="highlightTool('Python', '• Built Lambda/ETL jobs in Python.\n• Created CLI automation tools.\n• Used Boto3 for AWS API scripting.\n• Integrated APIs/webhooks via Python.\n• Parsed logs & built dashboards.')">
+        <img src="assets/python.png" alt="Python" />
+        <span>Python</span>
+      </div>
+      <div class="logo-item" data-tool="Terraform" onclick="highlightTool('Terraform', '• Wrote IaC for AWS, Azure, GCP.\n• Used Terraform in CI/CD pipelines.\n• Managed remote state with S3+DynamoDB.\n• Created modules for reuse & DRY code.\n• Ran plan/apply with drift detection.')">
+        <img src="assets/terraform.png" alt="Terraform" />
+        <span>Terraform</span>
+      </div>
+    </div>
+    <div id="tool-info-box" class="tool-info-box" hidden>
+      <h3 id="tool-info-title"></h3>
+      <ul id="tool-info-list"></ul>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <h2 class="section-title"><span>03.</span> Experience</h2>
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <h3>DevOps Engineer</h3>
+              <p class="timeline-company">Company Name &nbsp;·&nbsp; Full-time</p>
+            </div>
+            <span class="timeline-date">2023 – Present</span>
+          </div>
+          <ul>
+            <li>Designed and maintained CI/CD pipelines on Jenkins and GitHub Actions, reducing release cycle time by 40%.</li>
+            <li>Provisioned and managed AWS infrastructure (EKS, RDS, VPC) using Terraform, enabling zero-downtime deployments.</li>
+            <li>Implemented centralized logging and monitoring with CloudWatch, cutting MTTR by 30%.</li>
+            <li>Containerized 10+ microservices and migrated workloads from EC2 to EKS clusters.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <h3>Cloud Infrastructure Intern</h3>
+              <p class="timeline-company">Company Name &nbsp;·&nbsp; Internship</p>
+            </div>
+            <span class="timeline-date">2022 – 2023</span>
+          </div>
+          <ul>
+            <li>Assisted in building serverless workflows using AWS Lambda, Step Functions, and EventBridge.</li>
+            <li>Automated repetitive operational tasks with Python and Boto3, saving 5+ hours/week.</li>
+            <li>Supported migration of on-prem workloads to AWS using CloudFormation templates.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-alt" id="projects">
+    <h2 class="section-title"><span>04.</span> Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="project-header">
+          <span class="project-icon">☁️</span>
+          <div class="project-links">
+            <a href="#" aria-label="GitHub" title="View on GitHub">&#60;/&#62;</a>
+          </div>
+        </div>
+        <h3>AWS Multi-Account Governance Platform</h3>
+        <p>Built a multi-account AWS setup using Control Tower, SCPs, and AWS Config rules to enforce security and compliance across teams.</p>
+        <div class="project-tags">
+          <span>AWS</span><span>Terraform</span><span>Control Tower</span><span>Python</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-header">
+          <span class="project-icon">🐳</span>
+          <div class="project-links">
+            <a href="#" aria-label="GitHub" title="View on GitHub">&#60;/&#62;</a>
+          </div>
+        </div>
+        <h3>Kubernetes Auto-Scaling Platform</h3>
+        <p>Deployed production EKS cluster with HPA, Cluster Autoscaler, and Helm-managed services. Integrated RBAC, network policies, and Prometheus monitoring.</p>
+        <div class="project-tags">
+          <span>Kubernetes</span><span>Helm</span><span>Prometheus</span><span>EKS</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-header">
+          <span class="project-icon">🔁</span>
+          <div class="project-links">
+            <a href="#" aria-label="GitHub" title="View on GitHub">&#60;/&#62;</a>
+          </div>
+        </div>
+        <h3>End-to-End CI/CD Pipeline</h3>
+        <p>Built a full pipeline using Jenkins + GitHub Webhooks → Docker build → ECR push → Terraform plan/apply → EKS rolling deploy, with Slack notifications at each stage.</p>
+        <div class="project-tags">
+          <span>Jenkins</span><span>Docker</span><span>Terraform</span><span>GitHub</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-header">
+          <span class="project-icon">🐍</span>
+          <div class="project-links">
+            <a href="#" aria-label="GitHub" title="View on GitHub">&#60;/&#62;</a>
+          </div>
+        </div>
+        <h3>AWS Cost Optimization Bot</h3>
+        <p>Python + Boto3 Lambda function that identifies idle EC2 instances, unattached EBS volumes, and unused Elastic IPs, then sends a weekly cost-saving report via SNS.</p>
+        <div class="project-tags">
+          <span>Python</span><span>Lambda</span><span>Boto3</span><span>SNS</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <h2 class="section-title"><span>05.</span> Get In Touch</h2>
+    <div class="contact-wrapper">
+      <p class="contact-intro">I'm open to full-time roles, freelance projects, and collaborations. Drop me a message and I'll get back to you.</p>
+      <div class="contact-links">
+        <a href="mailto:shthalla@example.com" class="contact-card">
+          <span class="contact-icon">✉️</span>
+          <span>shthalla@example.com</span>
+        </a>
+        <a href="https://linkedin.com/in/shthalla" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <span class="contact-icon">💼</span>
+          <span>linkedin.com/in/shthalla</span>
+        </a>
+        <a href="https://github.com/shthalla" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <span class="contact-icon">🐙</span>
+          <span>github.com/shthalla</span>
+        </a>
+      </div>
+      <a href="assets/shravan%20Resume.pdf" download class="btn btn-primary" style="margin-top:2rem;">📄 Download Resume</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>Designed &amp; Built by <strong>Shravan Kumar Thalla</strong></p>
+    <p class="footer-sub">© 2026 · shthalla.github.io</p>
   </footer>
+
 </body>
 </html>
