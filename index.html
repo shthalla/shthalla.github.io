@@ -81,40 +81,14 @@
 
   <!-- SKILLS -->
   <section class="section section-alt" id="skills">
-    <h2 class="section-title"> DevOps Toolset</h2>
+    <h2 class="section-title"> Skills &amp; Toolset</h2>
     <p class="section-sub">Click a tool to see how I've used it.</p>
     <div class="logo-grid">
+
+      <!-- ── Cloud ── -->
       <div class="logo-item" data-tool="AWS" onclick="highlightTool('AWS', '• Owned enterprise governance with Control Tower, IAM/SSO, and OU-based account strategy.\n• Architected EKS, ECS, Lambda, S3, RDS, and CloudFormation at scale.\n• Led multi-account, multi-region infrastructure for Ellucian and AWS PS customers.\n• Implemented AWS Config, CloudTrail, Security Hub, and GuardDuty for compliance.\n• Enabled ML inference, feature pipelines, and GenAI endpoints on AWS.')">
-        <img src="assets/aws.png" alt="AWS" />
+        <img src="https://cdn.simpleicons.org/amazonaws/FF9900" alt="AWS" />
         <span>AWS</span>
-      </div>
-      <div class="logo-item" data-tool="Docker" onclick="highlightTool('Docker', '• Containerized microservices and ML inference APIs for consistent deployments.\n• Built multi-stage Dockerfiles to produce lean, production-ready images.\n• Used Docker Compose for local dev and integration testing.\n• Integrated Docker builds into Jenkins and GitHub Actions pipelines.\n• Migrated workloads from EC2 to ECS/EKS with zero-downtime rollouts.')">
-        <img src="assets/docker.png" alt="Docker" />
-        <span>Docker</span>
-      </div>
-      <div class="logo-item" data-tool="GitHub" onclick="highlightTool('GitHub', '• Defined Git and CI/CD strategies for AI/ML and GenAI workloads at Ellucian.\n• Enabled model version control, safe rollbacks, and rapid experimentation pipelines.\n• Set up GitHub Actions for automated build, test, and deploy triggers.\n• Managed secrets, branch protection rules, and PR-gated deployments.\n• Integrated GitHub with Jenkins, Terraform, and container registries.')">
-        <img src="assets/github.png" alt="GitHub" />
-        <span>GitHub</span>
-      </div>
-      <div class="logo-item" data-tool="Jenkins" onclick="highlightTool('Jenkins', '• Built multi-stage Groovy pipelines for CI/CD across dev, staging, and prod.\n• Designed Jenkins-on-Kubernetes for dynamic, scalable build agents.\n• Integrated Jenkins with GitHub, Terraform, Docker, and ECR.\n• Implemented parallel builds and artifact promotion for faster delivery.\n• Configured Slack and email alerting for pipeline status and failures.')">
-        <img src="assets/jenkins.png" alt="Jenkins" />
-        <span>Jenkins</span>
-      </div>
-      <div class="logo-item" data-tool="Kubernetes" onclick="highlightTool('Kubernetes', '• Operated EKS and AKS clusters for production microservices and ML workloads.\n• Deployed and managed Helm charts for services and data pipelines.\n• Configured HPA, Cluster Autoscaler, and health probes for resilience.\n• Enforced RBAC, NetworkPolicies, and secrets management across clusters.\n• Monitored cluster health using Datadog, Prometheus, kubectl, and k9s.')">
-        <img src="assets/kubernetes.png" alt="Kubernetes" />
-        <span>Kubernetes</span>
-      </div>
-      <div class="logo-item" data-tool="Linux" onclick="highlightTool('Linux', '• Deep expertise in RHEL and Ubuntu across enterprise and cloud environments.\n• Tuned kernel parameters for Docker, Kubernetes, and high-performance workloads.\n• Managed firewall rules, iptables, and network security configurations.\n• Automated ops tasks with Bash and Python across 100+ Linux hosts.\n• Hands-on with systemd, journalctl, cgroups, and vulnerability management.')">
-        <img src="assets/linux.png" alt="Linux" />
-        <span>Linux</span>
-      </div>
-      <div class="logo-item" data-tool="Python" onclick="highlightTool('Python', '• Built Lambda functions, ETL pipelines, and ML workflow automation in Python.\n• Used Boto3 extensively for AWS resource management and cost optimization bots.\n• Created CLI tools and scripts that saved 5+ hours/week in operational toil.\n• Integrated REST APIs and webhooks to connect services across platforms.\n• Parsed logs, authored runbooks, and built internal dashboards with Python.')">
-        <img src="assets/python.png" alt="Python" />
-        <span>Python</span>
-      </div>
-      <div class="logo-item" data-tool="Terraform" onclick="highlightTool('Terraform', '• Provisioned multi-account, multi-region infrastructure across AWS, Azure, and GCP.\n• Built reusable Terraform modules for VPCs, EKS clusters, IAM, and pipelines.\n• Managed remote state with S3 + DynamoDB locking for team-safe operations.\n• Integrated Terraform plan/apply into CI/CD pipelines with drift detection.\n• Used Terraform alongside CloudFormation StackSets for enterprise governance.')">
-        <img src="assets/terraform.png" alt="Terraform" />
-        <span>Terraform</span>
       </div>
       <div class="logo-item" data-tool="Azure" onclick="highlightTool('Azure', '• Built and automated Azure-based platforms at Comcast using AKS, Azure Functions, Storage, and Load Balancers.\n• Implemented Azure AD (SAML), TLS certificate management, and enterprise compliance configurations.\n• Designed observability using Azure Monitor, Application Insights, Datadog, Prometheus, and Grafana.\n• Led CI/CD standardization within Azure DevOps for automation and operational readiness.\n• Owned build and release pipelines on Azure at Sentry Insurance with focus on availability and DR.')">
         <img src="https://cdn.simpleicons.org/microsoftazure/0078D4" alt="Azure" />
@@ -124,18 +98,76 @@
         <img src="https://cdn.simpleicons.org/googlecloud/4285F4" alt="GCP" />
         <span>GCP</span>
       </div>
-      <div class="logo-item" data-tool="Ansible" onclick="highlightTool('Ansible', '• Used Ansible for configuration management and infrastructure automation across enterprise environments.\n• Automated OS-level configurations, package management, and security hardening across 100+ hosts.\n• Integrated Ansible playbooks into CI/CD pipelines alongside Terraform and CloudFormation.\n• Managed role-based playbooks for repeatable, idempotent infrastructure provisioning.')">
-        <img src="https://cdn.simpleicons.org/ansible/EE0000" alt="Ansible" />
-        <span>Ansible</span>
+
+      <!-- ── AI & ML ── -->
+      <div class="logo-item" data-tool="OpenAI" onclick="highlightTool('OpenAI', '• Integrated OpenAI GPT APIs into GenAI platform workflows at Ellucian for intelligent automation.\n• Built prompt engineering pipelines and LLM-powered tooling for internal developer productivity.\n• Deployed OpenAI-backed services behind AWS API Gateway with IAM-secured endpoints.\n• Managed API key rotation, rate limiting, and cost observability for production GenAI apps.\n• Evaluated GPT-4 and embedding models for RAG-based enterprise knowledge systems.')">
+        <img src="https://cdn.simpleicons.org/openai/10a37f" alt="OpenAI" />
+        <span>OpenAI</span>
+      </div>
+      <div class="logo-item" data-tool="Hugging Face" onclick="highlightTool('Hugging Face', '• Used Hugging Face Transformers to evaluate and fine-tune open-source LLMs for enterprise use cases.\n• Deployed Hugging Face model endpoints on SageMaker and EKS for scalable inference.\n• Integrated Hugging Face Hub into MLOps pipelines for model versioning and reproducibility.\n• Worked with embedding models (sentence-transformers) for semantic search and RAG systems.\n• Benchmarked OSS models (Llama, Mistral) against OpenAI APIs for cost and accuracy tradeoffs.')">
+        <img src="https://cdn.simpleicons.org/huggingface/FFD21E" alt="Hugging Face" />
+        <span>Hugging Face</span>
+      </div>
+      <div class="logo-item" data-tool="Amazon SageMaker" onclick="highlightTool('Amazon SageMaker', '• Deployed and managed ML model endpoints on SageMaker for real-time and batch inference.\n• Integrated SageMaker Pipelines into CI/CD workflows for automated model training and evaluation.\n• Used SageMaker Feature Store for centralized feature management across ML workloads.\n• Configured SageMaker Model Registry for versioned model promotion across dev, staging, and prod.\n• Monitored model drift and data quality using SageMaker Model Monitor and CloudWatch.')">
+        <img src="https://cdn.simpleicons.org/amazonsagemaker/FF9900" alt="Amazon SageMaker" />
+        <span>SageMaker</span>
+      </div>
+      <div class="logo-item" data-tool="MLflow" onclick="highlightTool('MLflow', '• Used MLflow for end-to-end ML experiment tracking, model versioning, and lifecycle management.\n• Integrated MLflow Tracking Server into EKS-hosted MLOps platforms for team-wide visibility.\n• Managed model registry with stage transitions (Staging → Production) tied to CI/CD gates.\n• Logged parameters, metrics, and artifacts from SageMaker and custom training jobs into MLflow.\n• Enabled reproducible experimentation and audit trails for GenAI model development.')">
+        <img src="https://cdn.simpleicons.org/mlflow/0194E2" alt="MLflow" />
+        <span>MLflow</span>
+      </div>
+      <div class="logo-item" data-tool="LangChain" onclick="highlightTool('LangChain', '• Built LangChain-powered RAG pipelines to connect LLMs with internal enterprise knowledge bases.\n• Orchestrated multi-step GenAI workflows using LangChain agents, tools, and memory modules.\n• Integrated LangChain with OpenAI, Hugging Face, and AWS Bedrock for flexible LLM backends.\n• Deployed LangChain services as containerized APIs on EKS with production-grade observability.\n• Used LangChain Expression Language (LCEL) to compose scalable, traceable AI pipelines.')">
+        <img src="https://cdn.simpleicons.org/langchain/1C3C3C" alt="LangChain" />
+        <span>LangChain</span>
+      </div>
+      <div class="logo-item" data-tool="AWS Bedrock" onclick="highlightTool('AWS Bedrock', '• Leveraged AWS Bedrock to access foundation models (Claude, Titan, Llama) within secure AWS environments.\n• Integrated Bedrock APIs into enterprise GenAI workflows with IAM-based access control and VPC endpoints.\n• Built RAG applications using Bedrock Knowledge Bases and Amazon OpenSearch Serverless.\n• Used Bedrock Agents to automate multi-step workflows with tool use and action group integration.\n• Evaluated Bedrock model performance and cost against self-hosted alternatives for production use.')">
+        <img src="https://cdn.simpleicons.org/amazonaws/FF9900" alt="AWS Bedrock" />
+        <span>AWS Bedrock</span>
+      </div>
+
+      <!-- ── DevOps & CI/CD ── -->
+      <div class="logo-item" data-tool="Docker" onclick="highlightTool('Docker', '• Containerized microservices and ML inference APIs for consistent deployments.\n• Built multi-stage Dockerfiles to produce lean, production-ready images.\n• Used Docker Compose for local dev and integration testing.\n• Integrated Docker builds into Jenkins and GitHub Actions pipelines.\n• Migrated workloads from EC2 to ECS/EKS with zero-downtime rollouts.')">
+        <img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" />
+        <span>Docker</span>
+      </div>
+      <div class="logo-item" data-tool="Kubernetes" onclick="highlightTool('Kubernetes', '• Operated EKS and AKS clusters for production microservices and ML workloads.\n• Deployed and managed Helm charts for services and data pipelines.\n• Configured HPA, Cluster Autoscaler, and health probes for resilience.\n• Enforced RBAC, NetworkPolicies, and secrets management across clusters.\n• Monitored cluster health using Datadog, Prometheus, kubectl, and k9s.')">
+        <img src="https://cdn.simpleicons.org/kubernetes/326CE5" alt="Kubernetes" />
+        <span>Kubernetes</span>
       </div>
       <div class="logo-item" data-tool="Helm" onclick="highlightTool('Helm', '• Deployed and managed Helm charts for microservices and ML data pipelines on EKS and AKS.\n• Built custom Helm charts to standardize service deployments across environments.\n• Used Helm with values files and secrets management to support dev, staging, and production releases.\n• Integrated Helm deployments into Jenkins and GitHub Actions CI/CD pipelines.')">
         <img src="https://cdn.simpleicons.org/helm/277A9F" alt="Helm" />
         <span>Helm</span>
       </div>
+      <div class="logo-item" data-tool="Jenkins" onclick="highlightTool('Jenkins', '• Built multi-stage Groovy pipelines for CI/CD across dev, staging, and prod.\n• Designed Jenkins-on-Kubernetes for dynamic, scalable build agents.\n• Integrated Jenkins with GitHub, Terraform, Docker, and ECR.\n• Implemented parallel builds and artifact promotion for faster delivery.\n• Configured Slack and email alerting for pipeline status and failures.')">
+        <img src="https://cdn.simpleicons.org/jenkins/D24939" alt="Jenkins" />
+        <span>Jenkins</span>
+      </div>
+      <div class="logo-item" data-tool="GitHub" onclick="highlightTool('GitHub', '• Defined Git and CI/CD strategies for AI/ML and GenAI workloads at Ellucian.\n• Enabled model version control, safe rollbacks, and rapid experimentation pipelines.\n• Set up GitHub Actions for automated build, test, and deploy triggers.\n• Managed secrets, branch protection rules, and PR-gated deployments.\n• Integrated GitHub with Jenkins, Terraform, and container registries.')">
+        <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub" />
+        <span>GitHub</span>
+      </div>
       <div class="logo-item" data-tool="GitHub Actions" onclick="highlightTool('GitHub Actions', '• Defined CI/CD strategies for AI/ML and GenAI workloads using GitHub Actions at Ellucian.\n• Set up automated build, test, and deploy triggers with PR-gated deployments.\n• Enabled model version control, automated rollbacks, and rapid experimentation pipelines.\n• Integrated GitHub Actions with Terraform, Docker, ECR, and container registries.\n• Managed secrets and environment-scoped deployments securely across workflows.')">
         <img src="https://cdn.simpleicons.org/githubactions/2088FF" alt="GitHub Actions" />
         <span>GitHub Actions</span>
       </div>
+      <div class="logo-item" data-tool="Terraform" onclick="highlightTool('Terraform', '• Provisioned multi-account, multi-region infrastructure across AWS, Azure, and GCP.\n• Built reusable Terraform modules for VPCs, EKS clusters, IAM, and pipelines.\n• Managed remote state with S3 + DynamoDB locking for team-safe operations.\n• Integrated Terraform plan/apply into CI/CD pipelines with drift detection.\n• Used Terraform alongside CloudFormation StackSets for enterprise governance.')">
+        <img src="https://cdn.simpleicons.org/terraform/7B42BC" alt="Terraform" />
+        <span>Terraform</span>
+      </div>
+      <div class="logo-item" data-tool="Ansible" onclick="highlightTool('Ansible', '• Used Ansible for configuration management and infrastructure automation across enterprise environments.\n• Automated OS-level configurations, package management, and security hardening across 100+ hosts.\n• Integrated Ansible playbooks into CI/CD pipelines alongside Terraform and CloudFormation.\n• Managed role-based playbooks for repeatable, idempotent infrastructure provisioning.')">
+        <img src="https://cdn.simpleicons.org/ansible/EE0000" alt="Ansible" />
+        <span>Ansible</span>
+      </div>
+      <div class="logo-item" data-tool="Linux" onclick="highlightTool('Linux', '• Deep expertise in RHEL and Ubuntu across enterprise and cloud environments.\n• Tuned kernel parameters for Docker, Kubernetes, and high-performance workloads.\n• Managed firewall rules, iptables, and network security configurations.\n• Automated ops tasks with Bash and Python across 100+ Linux hosts.\n• Hands-on with systemd, journalctl, cgroups, and vulnerability management.')">
+        <img src="https://cdn.simpleicons.org/linux/FCC624" alt="Linux" />
+        <span>Linux</span>
+      </div>
+      <div class="logo-item" data-tool="Python" onclick="highlightTool('Python', '• Built Lambda functions, ETL pipelines, and ML workflow automation in Python.\n• Used Boto3 extensively for AWS resource management and cost optimization bots.\n• Created CLI tools and scripts that saved 5+ hours/week in operational toil.\n• Integrated REST APIs and webhooks to connect services across platforms.\n• Parsed logs, authored runbooks, and built internal dashboards with Python.')">
+        <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" />
+        <span>Python</span>
+      </div>
+
+      <!-- ── Observability ── -->
       <div class="logo-item" data-tool="Splunk" onclick="highlightTool('Splunk', '• Implemented centralized log aggregation and observability using Splunk across cloud platforms.\n• Built dashboards and alerts for ML platform monitoring, incident detection, and RCA at Ellucian.\n• Correlated CloudTrail, application, and infrastructure logs for security and compliance reporting.\n• Deployed and managed Splunk as part of unified observability alongside CloudWatch and Datadog.')">
         <img src="https://cdn.simpleicons.org/splunk/65A637" alt="Splunk" />
         <span>Splunk</span>
@@ -144,6 +176,7 @@
         <img src="https://cdn.simpleicons.org/datadog/A95CFF" alt="Datadog" />
         <span>Datadog</span>
       </div>
+
     </div>
     <div id="tool-info-box" class="tool-info-box" hidden>
       <h3 id="tool-info-title"></h3>
