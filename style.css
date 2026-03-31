@@ -259,13 +259,36 @@ body {
 }
 
 /* ── Skills / Logo Grid ── */
+.skills-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.skill-group {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.skill-group-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 6px;
+  margin: 0;
+}
+
 .logo-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 30px;
 }
 
 .logo-item {
