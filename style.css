@@ -1,23 +1,14 @@
 /* ── CSS Variables ── */
 :root {
-  /* Backgrounds - deep navy (no green/mint tones) */
-  --bg:        #0b1220;   /* main background */
-  --bg-alt:    #0f172a;   /* section background */
-  --card:      #111827;   /* cards */
-
-  /* Accent - strong but not neon */
-  --accent:    #2563eb;   /* primary blue */
-  --accent2:   #1d4ed8;   /* darker hover blue */
-
-  /* Text - high readability */
-  --text:      #f8fafc;   /* soft white (better than pure white) */
-  --muted:     #94a3b8;   /* gray-blue */
-  --white:     #ffffff;
-
-  /* Borders / structure */
-  --border:    #1e293b;   /* subtle blue-gray border */
-
-  /* Layout */
+  --bg:        #0a192f;
+  --bg-alt:    #0d1f3c;
+  --card:      #112240;
+  --accent:    #64ffda;
+  --accent2:   #52d4b0;
+  --text:      #ccd6f6;
+  --muted:     #8892b0;
+  --white:     #e6f1ff;
+  --border:    #1e3a5f;
   --radius:    10px;
   --transition: 0.3s ease;
   --max-w:     1100px;
