@@ -1,429 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shravan Kumar Thalla | Sr Cloud DevOps Engineer</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shravan Kumar Thalla — Senior Cloud Platform Engineer</title>
+<meta name="description" content="Senior Cloud Platform Engineer, Principal-track. AWS multi-account governance, Control Tower, and infrastructure automation." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="scroll-progress"></div>
 
-  <!-- NAV -->
-  <nav class="navbar" id="navbar">
-    <span class="nav-logo">SKT</span>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="assets/shravan%20Resume.pdf" download class="nav-resume">Resume</a></li>
-    </ul>
-  </nav>
+<div id="progress"></div>
+
+<nav class="nav" id="nav">
+  <a href="#top" class="nav-mark">ST</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#scale">Scale</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#stack">Stack</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="assets/Shravan_Kumar_Resume.pdf" download class="nav-resume">Résumé</a></li>
+  </ul>
+</nav>
+
+<main id="top">
 
   <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <p class="hero-greeting">Hi, I'm</p>
-      <h1>Shravan Kumar Thalla</h1>
-      <p class="tagline"><span id="typewriter"></span><span class="tw-cursor">|</span></p>
-      <p class="hero-sub">8+ years architecting enterprise CI/CD, container platforms, and AI/ML operations across AWS, Azure &amp; GCP.</p>
-      <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">View My Work</a>
-        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">// status: open to staff / principal roles</p>
+      <h1 class="hero-name">Shravan Kumar Thalla</h1>
+      <p class="hero-role">Senior Cloud Platform Engineer <span class="hero-divider">/</span> Principal-track</p>
+      <p class="hero-desc">I own the AWS multi-account provisioning and governance platform behind Ellucian's higher-education customer environments — <strong>950+ accounts</strong>, <strong>11 regions</strong>, built and automated mostly solo.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-fill">View the work</a>
+        <a href="#contact" class="btn btn-line">Get in touch</a>
       </div>
     </div>
-    <canvas id="hero-canvas" aria-hidden="true"></canvas>
-    <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
-    <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+    <div class="hero-rail" aria-hidden="true">
+      <span>AWS</span><span>·</span><span>CONTROL TOWER</span><span>·</span><span>TERRAFORM</span><span>·</span><span>JENKINS</span><span>·</span><span>KUBERNETES</span><span>·</span><span>OKTA</span><span>·</span><span>10+ YRS</span><span>·</span>
+    </div>
+  </section>
+
+  <!-- SCALE — signature element -->
+  <section class="scale" id="scale">
+    <p class="scale-label">the platform, at a glance</p>
+    <div class="scale-grid">
+      <div class="scale-stat">
+        <span class="scale-num">950<span class="scale-plus">+</span></span>
+        <span class="scale-key">accounts provisioned, fixed &amp; decommissioned</span>
+      </div>
+      <div class="scale-stat">
+        <span class="scale-num">11</span>
+        <span class="scale-key">AWS regions enabled end-to-end</span>
+      </div>
+      <div class="scale-stat">
+        <span class="scale-num">$30K<span class="scale-plus">+</span></span>
+        <span class="scale-key">monthly cloud spend cut, recurring</span>
+      </div>
+      <div class="scale-stat">
+        <span class="scale-num">10<span class="scale-plus">+</span></span>
+        <span class="scale-key">years across AWS, Azure, GCP</span>
+      </div>
+    </div>
+    <svg class="org-map" viewBox="0 0 760 90" aria-hidden="true">
+      <line x1="40" y1="45" x2="720" y2="45" class="org-spine" />
+      <g class="org-node-group">
+        <circle cx="40" cy="45" r="7" class="org-hub" />
+        <text x="40" y="72" class="org-label">control tower</text>
+      </g>
+      <g class="org-node-group" data-i="1"><circle cx="140" cy="45" r="4" class="org-node" /></g>
+      <g class="org-node-group" data-i="2"><circle cx="220" cy="45" r="4" class="org-node" /></g>
+      <g class="org-node-group" data-i="3"><circle cx="300" cy="45" r="4" class="org-node" /></g>
+      <g class="org-node-group" data-i="4"><circle cx="380" cy="45" r="4" class="org-node" /></g>
+      <g class="org-node-group" data-i="5"><circle cx="460" cy="45" r="4" class="org-node" /></g>
+      <g class="org-node-group" data-i="6"><circle cx="540" cy="45" r="4" class="org-node" /></g>
+      <g class="org-node-group" data-i="7"><circle cx="620" cy="45" r="4" class="org-node" /></g>
+      <g class="org-node-group">
+        <circle cx="700" cy="45" r="7" class="org-hub" />
+        <text x="700" y="72" class="org-label org-label-right">950+ accounts</text>
+      </g>
+    </svg>
   </section>
 
   <!-- ABOUT -->
   <section class="section" id="about">
-    <h2 class="section-title"> About Me</h2>
+    <p class="section-num">01</p>
+    <h2 class="section-title">About</h2>
     <div class="about-grid">
       <div class="about-text">
-        <p>
-          Senior Cloud &amp; Platform Engineer with 8+ years of experience evolving from DevOps into cloud
-          automation, data platforms, and AI/ML operations. Currently at Ellucian, I architect and operate
-          enterprise CI/CD, container platforms, ETL pipelines, and secure multi-cloud environments with
-          org-wide impact.
-        </p>
-        <p>
-          Strong focus on platform engineering, automation at scale, and enabling AI-driven workloads
-          through reliable, compliant, and cost-optimized cloud architectures. I've led MLOps and GenAI
-          platform initiatives — from model endpoints and feature pipelines to automated rollbacks and
-          production observability.
-        </p>
-        <ul class="about-highlights">
-          <li>🏅 AWS Certified Solutions Architect – Associate &amp; Professional</li>
-          <li>🟢 NVIDIA AI Infrastructure &amp; Operations Fundamentals</li>
-          <li>🤖 MLOps &amp; GenAI platform engineering at Ellucian</li>
-          <li>☁️ Multi-cloud: AWS (primary), Azure, GCP</li>
-          <li>🐳 Kubernetes (EKS/AKS/ECS), Docker, Helm</li>
-          <li>⚙️ IaC: Terraform, CloudFormation, Ansible</li>
-          <li>📊 Observability: Splunk, Datadog, CloudWatch</li>
-        </ul>
+        <p>I'm a Senior Cloud Platform Engineer with 10+ years across AWS, Azure, and GCP. For the past four years at Ellucian, I've been the primary technical owner of the AWS multi-account provisioning and lifecycle platform that the company's higher-education customer environments run on.</p>
+        <p>That means Control Tower, Account Factory, region enablement, disaster recovery architecture, cost and compliance automation — and increasingly, building the internal tools that let other engineers self-serve against the platform instead of filing a request to me directly.</p>
+        <p>Before Ellucian, I spent time inside AWS itself — first in Support, then in Professional Services — which is where most of my instincts about how customers actually use this stuff in production came from.</p>
       </div>
-      <div class="about-card">
-        <div class="stat"><span class="stat-num">8+</span><span class="stat-label">Years of Experience</span></div>
-        <div class="stat"><span class="stat-num">6</span><span class="stat-label">Companies &amp; Roles</span></div>
-        <div class="stat"><span class="stat-num">3x</span><span class="stat-label">AWS &amp; NVIDIA Certified</span></div>
-        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Clouds: AWS·Azure·GCP</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="section section-alt" id="skills">
-    <h2 class="section-title"> Skills &amp; Toolset</h2>
-    <p class="section-sub">Click a tool to see how I've used it.</p>
-    <div class="skills-wrapper">
-
-      <!-- ── Cloud ── -->
-      <div class="skill-group">
-        <h4 class="skill-group-label">Cloud</h4>
-        <div class="logo-grid">
-          <div class="logo-item" data-tool="AWS" onclick="highlightTool('AWS', '• Owned enterprise governance with Control Tower, IAM/SSO, and OU-based account strategy.\n• Architected EKS, ECS, Lambda, S3, RDS, and CloudFormation at scale.\n• Led multi-account, multi-region infrastructure for Ellucian and AWS PS customers.\n• Implemented AWS Config, CloudTrail, Security Hub, and GuardDuty for compliance.\n• Enabled ML inference, feature pipelines, and GenAI endpoints on AWS.')">
-            <img src="assets/icons/aws.svg" alt="AWS" />
-            <span>AWS</span>
-          </div>
-          <div class="logo-item" data-tool="Azure" onclick="highlightTool('Azure', '• Built and automated Azure-based platforms at Comcast using AKS, Azure Functions, Storage, and Load Balancers.\n• Implemented Azure AD (SAML), TLS certificate management, and enterprise compliance configurations.\n• Designed observability using Azure Monitor, Application Insights, Datadog, Prometheus, and Grafana.\n• Led CI/CD standardization within Azure DevOps for automation and operational readiness.\n• Owned build and release pipelines on Azure at Sentry Insurance with focus on availability and DR.')">
-            <img src="assets/icons/azure.svg" alt="Azure" />
-            <span>Azure</span>
-          </div>
-          <div class="logo-item" data-tool="GCP" onclick="highlightTool('GCP', '• Multi-cloud experience with GCP alongside AWS (primary) and Azure.\n• Managed build and release pipelines on GCP at Sentry Insurance.\n• Worked with GCP networking, compute, and storage services for hybrid cloud architectures.\n• Provisioned GCP infrastructure using Terraform modules alongside AWS and Azure.')">
-            <img src="assets/icons/gcp.svg" alt="GCP" />
-            <span>GCP</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- ── AI & ML ── -->
-      <div class="skill-group">
-        <h4 class="skill-group-label">AI &amp; ML</h4>
-        <div class="logo-grid">
-          <div class="logo-item" data-tool="OpenAI" onclick="highlightTool('OpenAI', '• Integrated OpenAI GPT APIs into GenAI platform workflows at Ellucian for intelligent automation.\n• Built prompt engineering pipelines and LLM-powered tooling for internal developer productivity.\n• Deployed OpenAI-backed services behind AWS API Gateway with IAM-secured endpoints.\n• Managed API key rotation, rate limiting, and cost observability for production GenAI apps.\n• Evaluated GPT-4 and embedding models for RAG-based enterprise knowledge systems.')">
-            <img src="assets/icons/openai.svg" alt="OpenAI" />
-            <span>OpenAI</span>
-          </div>
-          <div class="logo-item" data-tool="Hugging Face" onclick="highlightTool('Hugging Face', '• Used Hugging Face Transformers to evaluate and fine-tune open-source LLMs for enterprise use cases.\n• Deployed Hugging Face model endpoints on SageMaker and EKS for scalable inference.\n• Integrated Hugging Face Hub into MLOps pipelines for model versioning and reproducibility.\n• Worked with embedding models (sentence-transformers) for semantic search and RAG systems.\n• Benchmarked OSS models (Llama, Mistral) against OpenAI APIs for cost and accuracy tradeoffs.')">
-            <img src="assets/icons/huggingface.svg" alt="Hugging Face" />
-            <span>Hugging Face</span>
-          </div>
-          <div class="logo-item" data-tool="Amazon SageMaker" onclick="highlightTool('Amazon SageMaker', '• Deployed and managed ML model endpoints on SageMaker for real-time and batch inference.\n• Integrated SageMaker Pipelines into CI/CD workflows for automated model training and evaluation.\n• Used SageMaker Feature Store for centralized feature management across ML workloads.\n• Configured SageMaker Model Registry for versioned model promotion across dev, staging, and prod.\n• Monitored model drift and data quality using SageMaker Model Monitor and CloudWatch.')">
-            <img src="assets/icons/sagemaker.svg" alt="Amazon SageMaker" />
-            <span>SageMaker</span>
-          </div>
-          <div class="logo-item" data-tool="MLflow" onclick="highlightTool('MLflow', '• Used MLflow for end-to-end ML experiment tracking, model versioning, and lifecycle management.\n• Integrated MLflow Tracking Server into EKS-hosted MLOps platforms for team-wide visibility.\n• Managed model registry with stage transitions (Staging → Production) tied to CI/CD gates.\n• Logged parameters, metrics, and artifacts from SageMaker and custom training jobs into MLflow.\n• Enabled reproducible experimentation and audit trails for GenAI model development.')">
-            <img src="assets/icons/mlflow.svg" alt="MLflow" />
-            <span>MLflow</span>
-          </div>
-          <div class="logo-item" data-tool="LangChain" onclick="highlightTool('LangChain', '• Built LangChain-powered RAG pipelines to connect LLMs with internal enterprise knowledge bases.\n• Orchestrated multi-step GenAI workflows using LangChain agents, tools, and memory modules.\n• Integrated LangChain with OpenAI, Hugging Face, and AWS Bedrock for flexible LLM backends.\n• Deployed LangChain services as containerized APIs on EKS with production-grade observability.\n• Used LangChain Expression Language (LCEL) to compose scalable, traceable AI pipelines.')">
-            <img src="assets/icons/langchain.svg" alt="LangChain" />
-            <span>LangChain</span>
-          </div>
-          <div class="logo-item" data-tool="AWS Bedrock" onclick="highlightTool('AWS Bedrock', '• Leveraged AWS Bedrock to access foundation models (Claude, Titan, Llama) within secure AWS environments.\n• Integrated Bedrock APIs into enterprise GenAI workflows with IAM-based access control and VPC endpoints.\n• Built RAG applications using Bedrock Knowledge Bases and Amazon OpenSearch Serverless.\n• Used Bedrock Agents to automate multi-step workflows with tool use and action group integration.\n• Evaluated Bedrock model performance and cost against self-hosted alternatives for production use.')">
-            <img src="assets/icons/aws.svg" alt="AWS Bedrock" />
-            <span>AWS Bedrock</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- ── DevOps & CI/CD ── -->
-      <div class="skill-group">
-        <h4 class="skill-group-label">DevOps &amp; CI/CD</h4>
-        <div class="logo-grid">
-          <div class="logo-item" data-tool="Docker" onclick="highlightTool('Docker', '• Containerized microservices and ML inference APIs for consistent deployments.\n• Built multi-stage Dockerfiles to produce lean, production-ready images.\n• Used Docker Compose for local dev and integration testing.\n• Integrated Docker builds into Jenkins and GitHub Actions pipelines.\n• Migrated workloads from EC2 to ECS/EKS with zero-downtime rollouts.')">
-            <img src="assets/icons/docker.svg" alt="Docker" />
-            <span>Docker</span>
-          </div>
-          <div class="logo-item" data-tool="Kubernetes" onclick="highlightTool('Kubernetes', '• Operated EKS and AKS clusters for production microservices and ML workloads.\n• Deployed and managed Helm charts for services and data pipelines.\n• Configured HPA, Cluster Autoscaler, and health probes for resilience.\n• Enforced RBAC, NetworkPolicies, and secrets management across clusters.\n• Monitored cluster health using Datadog, Prometheus, kubectl, and k9s.')">
-            <img src="assets/icons/kubernetes.svg" alt="Kubernetes" />
-            <span>Kubernetes</span>
-          </div>
-          <div class="logo-item" data-tool="Helm" onclick="highlightTool('Helm', '• Deployed and managed Helm charts for microservices and ML data pipelines on EKS and AKS.\n• Built custom Helm charts to standardize service deployments across environments.\n• Used Helm with values files and secrets management to support dev, staging, and production releases.\n• Integrated Helm deployments into Jenkins and GitHub Actions CI/CD pipelines.')">
-            <img src="assets/icons/helm.svg" alt="Helm" />
-            <span>Helm</span>
-          </div>
-          <div class="logo-item" data-tool="Jenkins" onclick="highlightTool('Jenkins', '• Built multi-stage Groovy pipelines for CI/CD across dev, staging, and prod.\n• Designed Jenkins-on-Kubernetes for dynamic, scalable build agents.\n• Integrated Jenkins with GitHub, Terraform, Docker, and ECR.\n• Implemented parallel builds and artifact promotion for faster delivery.\n• Configured Slack and email alerting for pipeline status and failures.')">
-            <img src="assets/icons/jenkins.svg" alt="Jenkins" />
-            <span>Jenkins</span>
-          </div>
-          <div class="logo-item" data-tool="GitHub" onclick="highlightTool('GitHub', '• Defined Git and CI/CD strategies for AI/ML and GenAI workloads at Ellucian.\n• Enabled model version control, safe rollbacks, and rapid experimentation pipelines.\n• Set up GitHub Actions for automated build, test, and deploy triggers.\n• Managed secrets, branch protection rules, and PR-gated deployments.\n• Integrated GitHub with Jenkins, Terraform, and container registries.')">
-            <img src="assets/icons/github.svg" alt="GitHub" />
-            <span>GitHub</span>
-          </div>
-          <div class="logo-item" data-tool="GitHub Actions" onclick="highlightTool('GitHub Actions', '• Defined CI/CD strategies for AI/ML and GenAI workloads using GitHub Actions at Ellucian.\n• Set up automated build, test, and deploy triggers with PR-gated deployments.\n• Enabled model version control, automated rollbacks, and rapid experimentation pipelines.\n• Integrated GitHub Actions with Terraform, Docker, ECR, and container registries.\n• Managed secrets and environment-scoped deployments securely across workflows.')">
-            <img src="assets/icons/githubactions.svg" alt="GitHub Actions" />
-            <span>GitHub Actions</span>
-          </div>
-          <div class="logo-item" data-tool="Terraform" onclick="highlightTool('Terraform', '• Provisioned multi-account, multi-region infrastructure across AWS, Azure, and GCP.\n• Built reusable Terraform modules for VPCs, EKS clusters, IAM, and pipelines.\n• Managed remote state with S3 + DynamoDB locking for team-safe operations.\n• Integrated Terraform plan/apply into CI/CD pipelines with drift detection.\n• Used Terraform alongside CloudFormation StackSets for enterprise governance.')">
-            <img src="assets/icons/terraform.svg" alt="Terraform" />
-            <span>Terraform</span>
-          </div>
-          <div class="logo-item" data-tool="Ansible" onclick="highlightTool('Ansible', '• Used Ansible for configuration management and infrastructure automation across enterprise environments.\n• Automated OS-level configurations, package management, and security hardening across 100+ hosts.\n• Integrated Ansible playbooks into CI/CD pipelines alongside Terraform and CloudFormation.\n• Managed role-based playbooks for repeatable, idempotent infrastructure provisioning.')">
-            <img src="assets/icons/ansible.svg" alt="Ansible" />
-            <span>Ansible</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- ── Languages ── -->
-      <div class="skill-group">
-        <h4 class="skill-group-label">Languages</h4>
-        <div class="logo-grid">
-          <div class="logo-item" data-tool="Python" onclick="highlightTool('Python', '• Built Lambda functions, ETL pipelines, and ML workflow automation in Python.\n• Used Boto3 extensively for AWS resource management and cost optimization bots.\n• Created CLI tools and scripts that saved 5+ hours/week in operational toil.\n• Integrated REST APIs and webhooks to connect services across platforms.\n• Parsed logs, authored runbooks, and built internal dashboards with Python.')">
-            <img src="assets/icons/python.svg" alt="Python" />
-            <span>Python</span>
-          </div>
-          <div class="logo-item" data-tool="Linux" onclick="highlightTool('Linux', '• Deep expertise in RHEL and Ubuntu across enterprise and cloud environments.\n• Tuned kernel parameters for Docker, Kubernetes, and high-performance workloads.\n• Managed firewall rules, iptables, and network security configurations.\n• Automated ops tasks with Bash and Python across 100+ Linux hosts.\n• Hands-on with systemd, journalctl, cgroups, and vulnerability management.')">
-            <img src="assets/icons/linux.svg" alt="Linux" />
-            <span>Linux / Bash</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- ── Monitoring ── -->
-      <div class="skill-group">
-        <h4 class="skill-group-label">Monitoring</h4>
-        <div class="logo-grid">
-          <div class="logo-item" data-tool="Splunk" onclick="highlightTool('Splunk', '• Implemented centralized log aggregation and observability using Splunk across cloud platforms.\n• Built dashboards and alerts for ML platform monitoring, incident detection, and RCA at Ellucian.\n• Correlated CloudTrail, application, and infrastructure logs for security and compliance reporting.\n• Deployed and managed Splunk as part of unified observability alongside CloudWatch and Datadog.')">
-            <img src="assets/icons/splunk.svg" alt="Splunk" />
-            <span>Splunk</span>
-          </div>
-          <div class="logo-item" data-tool="Datadog" onclick="highlightTool('Datadog', '• Monitored EKS/AKS cluster health and application performance using Datadog at Comcast and Ellucian.\n• Configured APM traces, custom metrics, monitors, and alerting for production workloads.\n• Built Datadog dashboards for infrastructure, container, and ML pipeline observability.\n• Used Datadog alongside Prometheus and Grafana for full-stack monitoring across hybrid cloud.')">
-            <img src="assets/icons/datadog.svg" alt="Datadog" />
-            <span>Datadog</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <div id="tool-info-box" class="tool-info-box" hidden>
-      <h3 id="tool-info-title"></h3>
-      <ul id="tool-info-list"></ul>
+      <ul class="about-facts">
+        <li><span class="fact-k">Certifications</span><span class="fact-v">AWS SA Professional, AWS SA Associate, NVIDIA AI Infra Fundamentals</span></li>
+        <li><span class="fact-k">Education</span><span class="fact-v">M.S., University of New Haven</span></li>
+        <li><span class="fact-k">Based in</span><span class="fact-v">Ohio, USA</span></li>
+        <li><span class="fact-k">Targeting</span><span class="fact-v">Staff / Principal Cloud Platform Engineer</span></li>
+      </ul>
     </div>
   </section>
 
   <!-- EXPERIENCE -->
-  <section class="section" id="experience">
-    <h2 class="section-title"> Experience</h2>
+  <section class="section section-alt" id="experience">
+    <p class="section-num">02</p>
+    <h2 class="section-title">Experience</h2>
     <div class="timeline">
 
-      <div class="timeline-item reveal">
-        <div class="timeline-dot"></div>
-        <div class="timeline-card">
-          <div class="timeline-header">
-            <div>
-              <h3>Sr Cloud DevOps Engineer</h3>
-              <p class="timeline-company">Ellucian &nbsp;·&nbsp; Full-time</p>
-            </div>
-            <span class="timeline-date">Aug 2022 – Present</span>
+      <article class="role">
+        <div class="role-head">
+          <div>
+            <h3>Senior Cloud DevOps Engineer</h3>
+            <p class="role-co">Ellucian</p>
           </div>
-          <ul>
-            <li>Lead enterprise cloud automation and platform engineering with org-wide impact across AWS multi-account environments.</li>
-            <li>Architect and operate ML and GenAI platforms — secure model endpoints, feature pipelines, CI/CD-driven deployments, and automated rollbacks.</li>
-            <li>Define MLOps and DevOps standards; create SOPs and train teams on deployment, monitoring, and incident response.</li>
-            <li>Own cloud governance, IAM, and security for AI and data platforms using AWS IAM, AWS Config, and Azure Policy.</li>
-            <li>Implement observability, auto-remediation, and RCA workflows using CloudWatch, Splunk, and CloudTrail.</li>
-            <li>Drive cost optimization, DR, and resilience across hybrid cloud using AWS Backup and cost management tooling.</li>
-          </ul>
+          <span class="role-date">Aug 2022 — Present</span>
         </div>
-      </div>
+        <ul class="role-list">
+          <li>Lead AWS region enablement across 11 regions, including ca-west-1 and me-central-1 — landing zone, STS/assume-role, KMS, validation, and reusable runbooks.</li>
+          <li>Built and own a self-service account provisioning tool used independently by other engineers to create new accounts, removing the need to route requests through me.</li>
+          <li>Designed an MCP server integrated with Control Tower and Account Factory for natural-language queries against org state during incident and audit investigation.</li>
+          <li>Built a Slack-based self-service access tool integrated with Okta and AWS IAM Identity Center for SSO access requests.</li>
+          <li>Re-engineered the provisioning deployment pipeline onto direct Jenkins pipelines with a feature-branch/test, main-branch/prod workflow.</li>
+          <li>Authored disaster recovery architecture for core account management infrastructure, sequenced around an in-flight refactor.</li>
+          <li>Serve as primary technical owner of the platform, personally handling 950+ account create/fix/escalate/decommission operations.</li>
+          <li>Cut recurring cloud monitoring spend ~$30K+/month by eliminating duplicate audit logging; advise leadership directly on further savings.</li>
+          <li>Built automated CloudTrail evidence collection for PCI audits; rolled out Macie with Security Hub for sensitive data discovery.</li>
+          <li>Mentor teammates on Control Tower and provisioning operations; lead evaluation of new AWS services with AWS account teams.</li>
+        </ul>
+      </article>
 
-      <div class="timeline-item reveal">
-        <div class="timeline-dot"></div>
-        <div class="timeline-card">
-          <div class="timeline-header">
-            <div>
-              <h3>Cloud DevOps Engineer – Professional Services</h3>
-              <p class="timeline-company">Amazon Web Services &nbsp;·&nbsp; Full-time</p>
-            </div>
-            <span class="timeline-date">Mar 2021 – Aug 2022</span>
+      <article class="role">
+        <div class="role-head">
+          <div>
+            <h3>Cloud DevOps Engineer, Professional Services</h3>
+            <p class="role-co">Amazon Web Services</p>
           </div>
-          <ul>
-            <li>Designed and delivered customer cloud architectures using AWS serverless, container, and data services.</li>
-            <li>Led infrastructure automation using CloudFormation, CDK, Python, Bash, and PowerShell for scalable solutions.</li>
-            <li>Implemented secure, compliant architectures leveraging Security Hub, WAF, GuardDuty, and KMS.</li>
-            <li>Supported data and analytics platforms including EMR, Glue, Redshift, Athena, and Batch.</li>
-            <li>Enabled container orchestration using ECS, EKS, and Fargate for production-grade CI/CD pipelines.</li>
-          </ul>
+          <span class="role-date">Mar 2021 — Aug 2022</span>
         </div>
-      </div>
+        <ul class="role-list">
+          <li>Designed and delivered AWS architectures using serverless, container, and data services for enterprise customer requirements.</li>
+          <li>Automated infrastructure provisioning with CloudFormation, CDK, and Python/Bash for customer engagements.</li>
+          <li>Implemented secure architectures with Security Hub, GuardDuty, WAF, and KMS for customer compliance needs.</li>
+          <li>Assisted customers with designing and piloting containerized workloads on EKS and Fargate in proof-of-concept environments.</li>
+        </ul>
+      </article>
 
-      <div class="timeline-item reveal">
-        <div class="timeline-dot"></div>
-        <div class="timeline-card">
-          <div class="timeline-header">
-            <div>
-              <h3>Cloud Support Engineer – Deployment</h3>
-              <p class="timeline-company">Amazon Web Services &nbsp;·&nbsp; Full-time</p>
-            </div>
-            <span class="timeline-date">Apr 2020 – Mar 2021</span>
+      <article class="role">
+        <div class="role-head">
+          <div>
+            <h3>Cloud Support Engineer</h3>
+            <p class="role-co">Amazon Web Services</p>
           </div>
-          <ul>
-            <li>Provided deep technical support for CI/CD, container, and serverless workloads (ECS, EKS, Elastic Beanstalk, CodePipeline).</li>
-            <li>Troubleshot complex infrastructure and networking issues across Docker, Kubernetes, VPCs, load balancers, and DNS.</li>
-            <li>Assisted customers with IaC automation using CloudFormation, YAML/JSON, and Python.</li>
-            <li>Guided customers on secure, scalable architectures including WAF, ELB, IAM, and CloudTrail-based auditing.</li>
-          </ul>
+          <span class="role-date">Apr 2020 — Mar 2021</span>
         </div>
-      </div>
+        <ul class="role-list">
+          <li>Resolved complex infrastructure issues across ECS, EKS, Elastic Beanstalk, networking, and DNS in production environments.</li>
+          <li>Provided architectural guidance on secure AWS environments including IAM, WAF, ELB, and CloudTrail auditing.</li>
+        </ul>
+      </article>
 
-      <div class="timeline-item reveal">
-        <div class="timeline-dot"></div>
-        <div class="timeline-card">
-          <div class="timeline-header">
-            <div>
-              <h3>Cloud Security Engineer II</h3>
-              <p class="timeline-company">Comcast Corporate &nbsp;·&nbsp; Full-time</p>
-            </div>
-            <span class="timeline-date">Sep 2019 – Apr 2020</span>
+      <article class="role">
+        <div class="role-head">
+          <div>
+            <h3>Cloud Security Engineer II</h3>
+            <p class="role-co">Comcast Corporate</p>
           </div>
-          <ul>
-            <li>Built and automated Azure-based platforms using AKS, Azure Functions, Storage, and Load Balancers.</li>
-            <li>Implemented enterprise security controls including Azure AD (SAML), TLS certificate management, and compliance configurations.</li>
-            <li>Designed observability using Azure Monitor, Application Insights, Datadog, Prometheus, and Grafana.</li>
-            <li>Led CI/CD standardization within Azure DevOps, driving automation and operational readiness.</li>
-          </ul>
+          <span class="role-date">Sep 2019 — Apr 2020</span>
         </div>
-      </div>
+        <ul class="role-list">
+          <li>Worked with AKS-based Kubernetes workloads, integrating with Azure DevOps pipelines and monitoring as part of a broader platform team.</li>
+          <li>Implemented enterprise security controls including Azure AD, SAML, and TLS certificate management.</li>
+        </ul>
+      </article>
 
-      <div class="timeline-item reveal">
-        <div class="timeline-dot"></div>
-        <div class="timeline-card">
-          <div class="timeline-header">
-            <div>
-              <h3>DevOps Network Engineer / Build Manager</h3>
-              <p class="timeline-company">Sentry Insurance &nbsp;·&nbsp; Full-time</p>
-            </div>
-            <span class="timeline-date">Jan 2019 – Sep 2019</span>
+      <article class="role">
+        <div class="role-head">
+          <div>
+            <h3>DevOps Network Engineer / Build Manager</h3>
+            <p class="role-co">Sentry Insurance</p>
           </div>
-          <ul>
-            <li>Owned build and release pipelines across Azure and GCP, ensuring reliable deployments end-to-end.</li>
-            <li>Designed Jenkins pipelines to automate multi-stage deployments and improve release consistency.</li>
-            <li>Managed cloud networking on Azure and GCP with focus on availability, security, and disaster recovery.</li>
-            <li>Automated infrastructure using Terraform, Docker, Kubernetes, Python, and Bash.</li>
-          </ul>
+          <span class="role-date">Jan 2019 — Sep 2019</span>
         </div>
-      </div>
+        <ul class="role-list">
+          <li>Managed CI/CD pipelines using Jenkins across Azure and GCP environments.</li>
+          <li>Automated infrastructure and deployments using Terraform, Docker, Kubernetes, Python, and Bash.</li>
+        </ul>
+      </article>
 
-      <div class="timeline-item reveal">
-        <div class="timeline-dot"></div>
-        <div class="timeline-card">
-          <div class="timeline-header">
-            <div>
-              <h3>Cloud Security Engineer</h3>
-              <p class="timeline-company">Kohl's Corporation &nbsp;·&nbsp; Full-time</p>
-            </div>
-            <span class="timeline-date">Sep 2017 – Jan 2019</span>
+      <article class="role">
+        <div class="role-head">
+          <div>
+            <h3>Cloud Security Engineer</h3>
+            <p class="role-co">Kohl's Corporation</p>
           </div>
-          <ul>
-            <li>Owned deployment of cloud security tooling across AWS and Azure, including Vault, Splunk, AquaSec, and native services.</li>
-            <li>Partnered with DevOps teams to embed security into CI/CD pipelines and automate policy enforcement.</li>
-            <li>Implemented network security controls, IP whitelisting, and traffic policies to protect cloud workloads.</li>
-            <li>Monitored and responded to threats using AWS Security Hub, Azure Security Center, and centralized logging.</li>
-          </ul>
+          <span class="role-date">Sep 2017 — Jan 2019</span>
         </div>
-      </div>
+        <ul class="role-list">
+          <li>Implemented cloud security solutions using Vault, Splunk, AquaSec, and native AWS/Azure tooling, integrated into CI/CD.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <div class="role-head">
+          <div>
+            <h3>DevOps Cloud Engineer</h3>
+            <p class="role-co">Econtenti Inc</p>
+          </div>
+          <span class="role-date">Jan 2016 — Sep 2017</span>
+        </div>
+        <ul class="role-list">
+          <li>Supported AWS infrastructure including EC2, RDS, VPC, and core networking; automated provisioning with CloudFormation and Terraform.</li>
+        </ul>
+      </article>
 
     </div>
   </section>
 
   <!-- PROJECTS -->
-  <section class="section section-alt" id="projects">
-    <h2 class="section-title"> Projects</h2>
-    <div class="projects-grid">
+  <section class="section" id="projects">
+    <p class="section-num">03</p>
+    <h2 class="section-title">Selected work</h2>
+    <p class="section-sub">Case studies from Ellucian's AWS platform, plus one project with code on GitHub.</p>
 
-      <div class="project-card reveal">
-        <div class="project-header">
-          <span class="project-icon">🤖</span>
-          <div class="project-links"></div>
-        </div>
-        <h3>Enterprise MLOps &amp; GenAI Platform</h3>
-        <p>Architected and operated ML and GenAI platforms at Ellucian — secure model endpoints, feature pipelines, CI/CD-driven model deployments, automated rollbacks, and production observability with Splunk and CloudWatch.</p>
-        <div class="project-tags">
-          <span>AWS</span><span>EKS</span><span>Terraform</span><span>Splunk</span><span>GitHub Actions</span>
-        </div>
-      </div>
+    <div class="proj-grid">
 
-      <div class="project-card reveal">
-        <div class="project-header">
-          <span class="project-icon">🏛️</span>
-          <div class="project-links"></div>
-        </div>
-        <h3>Multi-Account AWS Governance Platform</h3>
-        <p>Designed and owned enterprise AWS governance at Ellucian using Control Tower, IAM/SSO, OU-based account strategy, StackSets, AWS Config, and CloudTrail — enabling security, compliance, and cost visibility across all accounts.</p>
-        <div class="project-tags">
-          <span>Control Tower</span><span>IAM</span><span>Terraform</span><span>CloudFormation</span>
-        </div>
-      </div>
+      <article class="proj">
+        <p class="proj-kicker">Case study — internal platform tool</p>
+        <h3>Self-service account provisioning</h3>
+        <p>Other engineers across the org needed new AWS accounts constantly — new colleges onboarding, additional accounts for existing ones — and every request landed on me. I built a self-service tool, solo, that lets engineers provision accounts themselves against the same automation I'd been running by hand.</p>
+        <p class="proj-result">Result: removed a standing bottleneck from the provisioning workflow. Now in active use org-wide.</p>
+      </article>
 
-      <div class="project-card reveal">
-        <div class="project-header">
-          <span class="project-icon">🔁</span>
-          <div class="project-links"></div>
-        </div>
-        <h3>CI/CD Platform for AI/ML Workloads</h3>
-        <p>Defined Git branching and CI/CD strategies for GenAI workloads — enabling rapid experimentation, model version control, safe rollbacks, and reliable production releases using Jenkins, GitHub Actions, Docker, and EKS.</p>
-        <div class="project-tags">
-          <span>Jenkins</span><span>GitHub Actions</span><span>Docker</span><span>EKS</span>
-        </div>
-      </div>
+      <article class="proj">
+        <p class="proj-kicker">Case study — agentic infrastructure tooling</p>
+        <h3>MCP server for Control Tower &amp; Account Factory</h3>
+        <p>Investigating account or org-state issues during an incident or audit usually means jumping between consoles and CLI calls. I built an MCP server, solo, that exposes Control Tower and Account Factory state to natural-language queries — ask what's happening with an account, get an answer.</p>
+        <p class="proj-result">Result: faster investigation during incidents and audits, without needing to know the underlying API surface.</p>
+      </article>
 
-      <div class="project-card reveal">
-        <div class="project-header">
-          <span class="project-icon">🐍</span>
-          <div class="project-links"></div>
-        </div>
-        <h3>Cloud Cost Optimization &amp; Compliance Automation</h3>
-        <p>Built Python + Boto3 automation to identify idle EC2 instances, unattached EBS volumes, and unused resources, delivering weekly cost-saving reports via SNS. Paired with AWS Config rules for continuous compliance drift detection.</p>
-        <div class="project-tags">
+      <article class="proj">
+        <p class="proj-kicker">Case study — identity &amp; access</p>
+        <h3>Slack-based self-service access requests</h3>
+        <p>Built, solo, a Slack-native tool that integrates with Okta to verify identity, then provisions SSO access via AWS IAM Identity Center — so engineers can request and receive account access without leaving Slack or filing a ticket.</p>
+        <p class="proj-result">Result: access requests resolved in Slack, identity-verified end to end.</p>
+      </article>
+
+      <article class="proj">
+        <p class="proj-kicker">Open source — code on GitHub</p>
+        <h3>Cloud cost &amp; compliance automation</h3>
+        <p>Python and Boto3 automation that scans for idle EC2 instances, unattached EBS volumes, and other unused resources, then reports the findings on a schedule via SNS — paired with AWS Config rules for ongoing compliance drift detection.</p>
+        <div class="proj-tags">
           <span>Python</span><span>Boto3</span><span>Lambda</span><span>AWS Config</span><span>SNS</span>
         </div>
-      </div>
+        <a href="https://github.com/shthalla" class="proj-link" target="_blank" rel="noopener noreferrer">View code <span aria-hidden="true">→</span></a>
+      </article>
 
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="section section-alt" id="stack">
+    <p class="section-num">04</p>
+    <h2 class="section-title">Stack</h2>
+    <div class="stack-grid">
+      <div class="stack-row">
+        <span class="stack-k">Cloud</span>
+        <span class="stack-v">AWS, Azure, GCP</span>
+      </div>
+      <div class="stack-row">
+        <span class="stack-k">AWS services</span>
+        <span class="stack-v">Organizations, Control Tower, Account Factory, IAM, Lambda, ECS, EKS, EC2, S3, CloudFormation, AWS Config, CloudTrail, VPC, Route 53, Security Hub, GuardDuty, Macie, AWS Backup, KMS, StackSets</span>
+      </div>
+      <div class="stack-row">
+        <span class="stack-k">IaC &amp; automation</span>
+        <span class="stack-v">Terraform, CloudFormation, AWS CDK, Ansible, Python, Bash, PowerShell</span>
+      </div>
+      <div class="stack-row">
+        <span class="stack-k">CI/CD &amp; SCM</span>
+        <span class="stack-v">Jenkins, GitHub, Bitbucket, Azure DevOps, AWS CodePipeline</span>
+      </div>
+      <div class="stack-row">
+        <span class="stack-k">Containers</span>
+        <span class="stack-v">Docker, Kubernetes, ECS, EKS, Fargate, AKS</span>
+      </div>
+      <div class="stack-row">
+        <span class="stack-k">Observability</span>
+        <span class="stack-v">Splunk, Datadog, CloudWatch, Prometheus, Grafana</span>
+      </div>
+      <div class="stack-row">
+        <span class="stack-k">Identity &amp; access</span>
+        <span class="stack-v">Okta, AWS IAM Identity Center, SSO, SAML</span>
+      </div>
+      <div class="stack-row">
+        <span class="stack-k">OS &amp; networking</span>
+        <span class="stack-v">Linux, DNS, load balancers, VPN, TCP/IP, VPC/VNet</span>
+      </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section class="section" id="contact">
-    <h2 class="section-title"> Get In Touch</h2>
-    <div class="contact-wrapper">
-      <p class="contact-intro">Open to senior cloud, platform engineering, and MLOps roles. Feel free to reach out!</p>
-      <div class="contact-links">
-        <a href="mailto:shravant.devops@gmail.com" class="contact-card">
-          <span class="contact-icon">✉️</span>
-          <span>shravant.devops@gmail.com</span>
-        </a>
-        <a href="tel:+18025660110" class="contact-card">
-          <span class="contact-icon">📞</span>
-          <span>802-566-0110</span>
-        </a>
-        <a href="https://www.linkedin.com/in/shravant/" target="_blank" rel="noopener noreferrer" class="contact-card">
-          <span class="contact-icon">💼</span>
-          <span>linkedin.com/in/shravant</span>
-        </a>
-        <a href="https://github.com/shthalla" target="_blank" rel="noopener noreferrer" class="contact-card">
-          <span class="contact-icon">🐙</span>
-          <span>github.com/shthalla</span>
-        </a>
-      </div>
-      <a href="assets/shravan%20Resume.pdf" download class="btn btn-primary" style="margin-top:2rem;">📄 Download Resume</a>
+  <section class="section contact" id="contact">
+    <p class="section-num">05</p>
+    <h2 class="section-title">Get in touch</h2>
+    <p class="contact-line">Open to Staff / Principal Cloud Platform Engineer, Senior Platform Engineer, and Senior Infrastructure Engineer (AWS) roles.</p>
+    <div class="contact-grid">
+      <a href="mailto:shravant.devops@gmail.com" class="contact-item">
+        <span class="contact-k">Email</span>
+        <span class="contact-v">shravant.devops@gmail.com</span>
+      </a>
+      <a href="tel:+18025660110" class="contact-item">
+        <span class="contact-k">Phone</span>
+        <span class="contact-v">802-566-0110</span>
+      </a>
+      <a href="https://www.linkedin.com/in/shravant/" target="_blank" rel="noopener noreferrer" class="contact-item">
+        <span class="contact-k">LinkedIn</span>
+        <span class="contact-v">linkedin.com/in/shravant</span>
+      </a>
+      <a href="https://github.com/shthalla" target="_blank" rel="noopener noreferrer" class="contact-item">
+        <span class="contact-k">GitHub</span>
+        <span class="contact-v">github.com/shthalla</span>
+      </a>
     </div>
+    <a href="assets/Shravan_Kumar_Resume.pdf" download class="btn btn-fill contact-cta">Download résumé</a>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <p>Designed &amp; Built by <strong>Shravan Kumar T</strong></p>
-    <p class="footer-sub">© 2026 · shthalla.github.io</p>
-  </footer>
+</main>
 
+<footer class="footer">
+  <p>Shravan Kumar Thalla — built from scratch, no template.</p>
+</footer>
+
+<script defer src="script.js"></script>
 </body>
 </html>
